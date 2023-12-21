@@ -1,0 +1,100 @@
+*
+{   
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{   
+    background-color: rgb(166, 225, 207);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.bimbly
+{
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.panel
+{
+    /* background-color: rgba(0, 0, 255, 0.338); */
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.show
+{
+    display: flex;
+}
+
+.btn-round
+{
+    background-size: contain;
+    border: none;
+    border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#toggleUI
+{
+    background-image: url('webImg/button1.png');
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+}
+
+
+#changeMaterial
+{
+    background-image: url('webImg/button1.png');
+    
+}
+
+#changeMaterial2
+{
+    background-image: url('webImg/button2.png');
+    
+}
+
+#changeMaterial3
+{
+    background-image: url('webImg/button3.png');
+    
+}
+
+@media screen and (orientation:landscape)
+{
+    .panel{
+        flex-direction: column;
+        height: 100%;
+        width:fit-content;
+    }
+}
